@@ -1,0 +1,29 @@
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video {
+  flex: 1 1 30%;
+  margin: 10px;
+  max-width: 320px; /* Establece un ancho máximo para evitar que los videos sean demasiado grandes */
+}
+
+.video video {
+  width: 100%;
+  height: auto;
+}
+
+.video p {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* Media query para ajustar el diseño en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .video {
+    flex-basis: 45%;
+    max-width: none; /* Elimina el ancho máximo en pantallas más pequeñas */
+  }
+}
